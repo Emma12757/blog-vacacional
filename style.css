@@ -1,0 +1,78 @@
+/* ✦ CSS con estética collage pastel */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;600&display=swap');
+
+:root {
+  --rosa:    #fadadd;
+  --celeste: #d4eaf5;
+  --crema:   #f5ede6;
+  --lavanda: #ede0f5;
+  --amarillo:#fff5b0;
+  --texto:   #6e5060;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  background-color: var(--crema);
+  background-image:
+    repeating-linear-gradient(45deg,
+      rgba(255,192,203,0.07) 0px, rgba(255,192,203,0.07) 1px,
+      transparent 1px, transparent 12px);
+}
+
+header {
+  background-color: var(--rosa);
+  color: #a05c72;
+  text-align: center;
+  padding: 18px 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 2.2rem;
+  border-bottom: 3px dashed #f0b8c0;
+}
+
+nav {
+  background-color: var(--celeste);
+  padding: 10px 16px;
+  text-align: center;
+  border-bottom: 2px solid #b8d9ef;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+nav a {
+  color: #5a8ca8;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Caveat', cursive;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  border: 1.5px solid #a8d0e8;
+}
+
+main {
+  padding: 20px;
+  background-color: #fff5f5;
+  border-radius: 0 0 14px 14px;
+  border: 1.5px solid #fcd5d5;
+  margin-bottom: 15px;
+  color: var(--texto);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #fff;
+  box-shadow: 3px 3px 0 #e8c8d0;
+  transform: rotate(-1.5deg);
+}
+aside {
+  background-color: var(--lavanda);
+  padding: 15px;
+  border-radius: 12px;
+  border: 1.5px solid #e0c8f5;
+  margin-top: 20px;
+}
